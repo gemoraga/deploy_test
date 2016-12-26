@@ -1,0 +1,45 @@
+<%provide(:title, I18n.t("edificio1"))%>
+<div class = "row">	
+	<div class="col-xs-6">
+		<div id="arauCarous" class="carousel slide" data-ride="carousel">		
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#arauCarous" data-slide-to="0" class="active"></li>
+				<li data-target="#arauCarous" data-slide-to="1"></li>
+				<li data-target="#arauCarous" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox" >
+				<div class="item active">
+		      		<%= image_tag "alto1.JPG", class:"image-carousel"%>
+		    	</div>
+			    <div class="item">
+			    	<%= image_tag "alto2.JPG", class:"image-carousel"%>
+			    </div>
+		    	<div class="item">
+		      		<%= image_tag "alto3.JPG", class:"image-carousel"%>
+		    	</div>
+			</div>
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#arauCarous" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#arauCarous" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	<!-- Video -->
+	<div class = "col-xs-6">
+		<div id="vimeo" class="video">
+			<iframe src = "https://player.vimeo.com/video/92934907" height= "100%" width="100%" frameborder= "0" webkitllowfullscreen moazllowfullscreen allowfullscreen></iframe>
+		</div>
+		<div class = "texto">
+			<h2 style="color:white; text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-weight:bold; font-family:Arial;">Alto San Fernando</h2>
+			<p style="color:rgb(204, 82, 0); text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-size:20px; font-weight:bold; font-family:Arial;"> Flexitarian photo booth elit, truffaut chambray selfies chia tempor pop-up pitchfork mustache coloring book. Et craft beer post-ironic, deserunt gluten-free organic four dollar toast incididunt. Photo booth knausgaard gastropub cold-pressed biodiesel, assumenda sed vero quis selfies tacos. Trust fund kombucha you probably haven't heard of them adipisicing, bicycle rights unicorn vape 8-bit asymmetrical tbh ad kickstarter succulents viral. </p> 
+		</div>
+	</div>
+</div>
+

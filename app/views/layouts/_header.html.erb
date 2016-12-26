@@ -1,0 +1,32 @@
+<div id = "header" class="navbar-fixed-top navbar-inverse">
+    <div class="container">        
+        <nav>
+            <ul style="margin:0;" class="nav navbar-nav navbar-left">
+                <li><a <%= link_to "Español", locale: "es"%> </a></li>
+                <li><a <%= link_to "English", locale: "en"%> </a></li>
+            </ul>
+            <ul style="margin:0;" class="nav navbar-nav navbar-right">  
+
+                <li><a id="hlink" <%= link_to I18n.t("inicio"), root_path%> </a></li>
+
+                <li class="dropdown">
+                    <a  href="#" class="dropbtn"><%= t("empresa") %></a>
+                    <div class="dropdown-content">
+                        <a href="#"><%= t("link1") %></a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>                
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><%= t("proyectos") %></a>
+                    <div class="dropdown-content">
+                        <a <%=link_to I18n.t("edificios"), proyectos_edificios_path%> </a>
+                        <a <%=link_to I18n.t("viviendas"), proyectos_social_path%> </a>
+                        <a <%=link_to I18n.t("anteriores"), proyectos_anteriores_path%> </a>  
+                    </div>
+                </li>
+                <li><a <%=link_to I18n.t("contacto"), contacto_path%></a></li>                
+            </ul>
+        </nav>
+    </div>
+</div>

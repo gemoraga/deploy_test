@@ -1,0 +1,24 @@
+<%provide(:title, I18n.t("contacto"))%>
+<br/>
+<br/>
+<body>
+  <br/>
+  <br/>
+  <br/>
+  <form action = "../postContact" method = "post">
+    <div class="form-group">
+      <label for="inputEmail">Email</label>
+      <input type="email" name = "email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+      <label for="inputSubject"><%= I18n.t("asunto")%></label>
+      <input type="text" name = "subject" class="form-control" id="inputSubject" aria-describedby="emailHelp" placeholder=<%= I18n.t("asunto")%> required>
+    </div>
+    <div class="form-group">
+      <label for="inputMessage"><%= I18n.t("mensaje")%></label>
+      <textarea class="form-control" name = "message" id="inputMessage" rows="3" placeholder= <%= I18n.t("mensaje")%> required></textarea>
+    </div>
+    <button id = "send" type="submit" class="btn btn-primary"><%= I18n.t("enviar")%></button>
+  </form>
+</body>
+

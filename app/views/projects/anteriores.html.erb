@@ -1,0 +1,129 @@
+<%provide(:title, I18n.t("proyectos"))%>
+<div class = "w3-row">
+	<div class="w3-half w3-container">	
+		<ul class="nav nav-tabs w3-margin-top">
+		  <li><a <%= link_to I18n.t("edificios"), proyectos_edificios_path, style: "font-weight: bold; font-family: Arial"%></a></li>
+		  <li><a <%= link_to I18n.t("viviendas"), proyectos_social_path, style: "font-weight: bold; font-family: Arial"%></a></li>
+		  <li class="active"><a style="font-weight:bold"><%= I18n.t("anteriores")%></a></li>
+		</ul>
+		
+			<div class="w3-col" style="width:50%;">
+				<text class="accordion">San Basilio</text>
+				<div class="panel">
+				  <p>Año: 1999 </br>
+				  	 Casas: 74</p>
+				</div>
+
+				<text class="accordion">Carranza</text>
+				<div class="panel">
+				  <p>Año: 2000 </br>
+				  	 Casas: 100</p>
+				</div>
+
+				<text class="accordion">San Basilio 2</text>
+				<div class="panel">
+				  <p>Año: 2001 </br>
+				  	 Casas: 140</p>
+				</div>
+
+				<text class="accordion">Don Elías</text>
+				<div class="panel">
+				  <p>Año: 2002 </br>
+				  	 Casas: 96</p>
+				</div>
+
+				<text class="accordion">San Basilio 3</text>
+				<div class="panel">
+				  <p>Año: 2002 </br>
+				  	 Casas: 60</p>
+				</div>
+
+				<text class="accordion">Porvenir</text>
+				<div class="panel">
+				  <p>Año: 2003 </br>
+				  	 Casas: 204</p>
+				</div>
+
+				<text class="accordion">Manuel Ford</text>
+				<div class="panel">
+				  <p>Año: 2004 </br>
+				  	 Casas: 140</p>
+				</div>
+
+				<text class="accordion">Rodeo Norte 1</text>
+				<div class="panel">
+				  <p>Año: 2005 </br>
+				  	 Casas: 132</p>
+				</div>
+			</div>
+			<div class="w3-col" style="width:50%;">
+				<text class="accordion">Don Elías</text>
+				<div class="panel">
+				  <p>Año: 2005 </br>
+				  	 Casas: 36</p>
+				</div>
+
+				<text class="accordion">Rodeo Norte 2</text>
+				<div class="panel">
+				  <p>Año: 2006 </br>
+				  	 Casas: 130</p>
+				</div>
+
+				<text class="accordion">San Basilio 4</text>
+				<div class="panel">
+				  <p>Año: 2006 </br>
+				  	 Casas: 96</p>
+				</div>
+
+				<text class="accordion">Manuel Ford 2</text>
+				<div class="panel">
+				  <p>Año: 2007 </br>
+				  	 Casas: 250</p>
+				</div>
+
+				<text class="accordion">Santa Laura</text>
+				<div class="panel">
+				  <p>Año: 2008 </br>
+				  	 Casas: 220</p>
+				</div>
+
+				<text class="accordion">Rodeo Sur 1</text>
+				<div class="panel">
+				  <p>Año: 2010 </br>
+				  	 Casas: 150</p>
+				</div>
+
+				<text class="accordion">Rodeo Sur 2</text>
+				<div class="panel">
+				  <p>Año: 2011 </br>
+				  	 Casas: 150</p>
+				</div>
+			</div>
+			<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			    acc[i].onclick = function(){
+			        this.classList.toggle("active");
+			        this.nextElementSibling.classList.toggle("show");
+			  }
+			}
+			</script>
+		</div>
+	<div class="w3-half w3-container">
+		<div id="map" class="w3-margin-top"></div>
+		<script type="text/javascript">
+			var map;
+			function initMap() {
+		  		map = new google.maps.Map(document.getElementById('map'), {
+		    	center: {lat: -34.581193, lng: -70.9788379},
+		    	zoom: 13
+		  		});
+			}		
+		</script>
+		<script async defer
+	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-_aJWhDXwIbKo67e2OPM-9AZwBr1wajA&callback=initMap">
+		</script>
+	</div>
+</div>

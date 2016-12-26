@@ -1,0 +1,41 @@
+<%provide(:title, I18n.t("proyectos"))%>
+<div class = "w3-row">
+	<div class="w3-half w3-container">
+		<ul class="nav nav-tabs w3-margin-top">
+		  <li class="active"><a style="font-weight:bold"><%= I18n.t("edificios")%></a></li>
+		  <li><a <%= link_to I18n.t("viviendas"), proyectos_social_path, style: "font-weight: bold; font-family: Arial"%></a></li>
+		  <li><a <%= link_to I18n.t("anteriores"), proyectos_anteriores_path, style: "font-weight: bold; font-family: Arial"%></a></li>
+		</ul>
+		  <div class="w3-col w3-margin-top" style="width:50%;"><%= link_to image_tag("alto san fernando.jpg", style: "display: block; width:15vw; margin-right: auto; border:1px solid black;"), :action => 'altoSanFernando', :controller => 'projects'%></a>
+		  	<h4> <%= link_to I18n.t("edificio1"), proyectos_edificios_altoSanFernando_path, style: "font-weight:bold; font-family:Arial; color:rgb(50,50,50);" %></h4>
+		  </div>
+		  <div class="w3-col w3-margin-top" style="width:50%;"><%= link_to image_tag("araucaria.jpg", style: "display: block; width:15vw; margin-right: auto; border:1px solid black;"), :action => 'araucaria', :controller => 'projects'%></a>
+		  	<h4><%= link_to I18n.t("edificio2"), proyectos_edificios_araucaria_path, style: "font-weight:bold; font-family:Arial; color:rgb(50,50,50);" %> </h4>
+		  </div>
+	</div>
+	<div class="w3-half w3-container">
+		<div id="map" class="w3-margin-top"></div>
+		<script type="text/javascript">
+			var map;
+			function initMap() {
+		  		map = new google.maps.Map(document.getElementById('map'), {
+		    	center: {lat: -34.581193, lng: -70.9788379},
+		    	zoom: 13
+		  		});
+		  	var marker =new google.maps.Marker({
+					    position: {lat: -34.5852304, lng: -70.9903121},
+					    map: map,
+					    title: 'La Araucaria'
+					  });
+		  	var marker2 =new google.maps.Marker({
+					    position: {lat: -34.5850089, lng: -70.9869867},
+					    map: map,
+					    title: 'Alto San Fernando'
+					  });
+			}		
+		</script>
+		<script async defer
+	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-_aJWhDXwIbKo67e2OPM-9AZwBr1wajA&callback=initMap">
+		</script>
+	</div>
+</div>

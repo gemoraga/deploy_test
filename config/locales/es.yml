@@ -19,24 +19,22 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  inicio: "Home"
-  empresa: "Firm"
-  proyectos: "Projects"
-  contacto: "Contact"
-  link1: "Who we are"
-  asunto: "Subject"
-  mensaje: "Message"
-  enviar: "Send"
-  flashmail: "Your email was sent succesfuly!"
+es:
+  inicio: "Inicio"
+  empresa: "Empresa"
+  proyectos: "Proyectos"
+  contacto: "Contacto"
+  link1: "Quienes somos"
+  asunto: "Asunto"
+  mensaje: "Mensaje"
+  enviar: "Enviar"
+  flashmail: "Tu email ha sido enviado con exito!"
   edificio1: "Alto San Fernando"
   edificio2: "La Araucaria"
   edificio3: "Edificio 3"
   vivienda1: "La Turbina"
   vivienda2: "Rengo"
   vivienda3: "San Vicente"
-  edificios: "Private Buildings"
-  viviendas: "Social Housing"
-  anteriores: "Previous Works"
-
-
+  edificios: "Edificios"
+  viviendas: "Viviendas Sociales"
+  anteriores: "Trabajos Anteriores"
