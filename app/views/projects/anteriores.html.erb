@@ -105,9 +105,15 @@
 
 			for (i = 0; i < acc.length; i++) {
 			    acc[i].onclick = function(){
+			        for(var j = 0; j < acc.length; j++){
+			        	if(acc[j].classList.contains("active")){
+			        		acc[j].classList.toggle("active");
+			        		acc[j].nextElementSibling.classList.toggle("show");
+			        	}
+			        }
 			        this.classList.toggle("active");
 			        this.nextElementSibling.classList.toggle("show");
-			  }
+			  	}
 			}
 			</script>
 		</div>
