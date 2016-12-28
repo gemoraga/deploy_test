@@ -1,6 +1,6 @@
 <%provide(:title, I18n.t("edificio1"))%>
-<div class = "row">	
-	<div class="col-xs-6">
+<div class = "w3-row">	
+	<div class="w3-half w3-container">
 		<div id="arauCarous" class="carousel slide" data-ride="carousel">		
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -32,13 +32,16 @@
 		</div>
 	</div>
 	<!-- Video -->
-	<div class = "col-xs-6">
+	<div class = "w3-half w3-container">
 		<div id="vimeo" class="video">
 			<iframe src = "https://player.vimeo.com/video/92934907" height= "100%" width="100%" frameborder= "0" webkitllowfullscreen moazllowfullscreen allowfullscreen></iframe>
 		</div>
 		<div class = "texto">
-			<h2 style="color:white; text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-weight:bold; font-family:Arial;">Alto San Fernando</h2>
-			<p style="color:rgb(204, 82, 0); text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-size:20px; font-weight:bold; font-family:Arial;"> Flexitarian photo booth elit, truffaut chambray selfies chia tempor pop-up pitchfork mustache coloring book. Et craft beer post-ironic, deserunt gluten-free organic four dollar toast incididunt. Photo booth knausgaard gastropub cold-pressed biodiesel, assumenda sed vero quis selfies tacos. Trust fund kombucha you probably haven't heard of them adipisicing, bicycle rights unicorn vape 8-bit asymmetrical tbh ad kickstarter succulents viral. </p> 
+			<h2 style="color:rgb(70,70,70); text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-weight:bold; font-family:Arial;">Alto San Fernando</h2>
+			<p style="color:white; text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-size:20px; font-weight:bold; font-family:Arial;"><%= I18n.t("año")%>: 2016 
+			</br><%= I18n.t("pisos") %>: 8
+			</br><%= I18n.t("departamentos")%>: 32 
+			</br><%= I18n.t("tipo") + ": " + I18n.t("habitacional") %> </p> 
 		</div>
 	</div>
 </div>
