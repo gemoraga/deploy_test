@@ -142,6 +142,7 @@ li.dropdown {
 #logo{
     height: 37vh;
     float: left;
+    margin-left: 0;
 }
 
 .nav.nav-tabs li.active a{
@@ -231,4 +232,9 @@ div.panel {
 div.panel.show {
     opacity: 1;
     max-height: 500px;  
+}
+
+.container .contact {
+    float: center;
+    width: 50vw;
 }
