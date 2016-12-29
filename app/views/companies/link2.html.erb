@@ -1,0 +1,17 @@
+<%provide(:title, I18n.t("empresa"))%>
+<div class="w3-row">
+	<h1 style="font-family:Arial; font-weight:bold; text-align:center;"><%= I18n.t("quienes-somos") %></h1>
+	</br>
+	<ul class="nav nav-tabs w3-margin-top">
+	  <li><a <%= link_to I18n.t("link1"), companies_link1_path, style: "font-weight: bold; font-family: Arial"%></a></li>
+	  <li class="active"><a style="font-weight:bold"><%= I18n.t("link2")%></a></li>
+	  <li><a <%= link_to I18n.t("link3"), companies_link3_path, style: "font-weight: bold; font-family: Arial"%></a></li>
+	</ul>
+</div>
+<div class="w3-row">
+	<div class="w3-half w3-container">
+	</div>
+
+	<div class="w3-hal w3-container">
+	</div>
+</div>

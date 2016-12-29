@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+
 	scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
 		get 'empresa', to: 'static_pages#enterprise'
 		get 'contacto', to: 'static_pages#contact'
@@ -12,6 +14,10 @@ Rails.application.routes.draw do
 		get 'proyectos/social/laTurbina', to: 'projects#laTurbina'
 		get 'proyectos/social/rengo', to: 'projects#rengo'
 		get 'proyectos/social/sanVicente', to: 'projects#sanVicente'
+		
+		get 'companies/link1', to: 'companies#link1'
+  		get 'companies/link2', to: 'companies#link2'
+  		get 'companies/link3', to: 'companies#link3'		
 		
 		post 'postContact', to: 'mails#recibirMail'
 

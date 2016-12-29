@@ -2,7 +2,8 @@ class NotifierMailer < ApplicationMailer
 
 	default from: 'contacto.prodelco@gmail.com'
 
-	def new_message(mensaje, email, asunto)
+	def new_message(name, mensaje, email, asunto)
+		@name = name
 		@mensaje = mensaje
 		@email = email
 		mail to: 'jfcumsille@uc.cl', subject: asunto  

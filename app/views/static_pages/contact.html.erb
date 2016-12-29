@@ -2,11 +2,15 @@
 <br/>
 <br/>
 <body>
-  <br/>
+  <h1 style="font-family:Arial; font-weight:bold; text-align:center;"><%= I18n.t("contacto") %></h1>
   <br/>
   <br/>
   <div class = "container contact">
     <form action = "../postContact" method = "post">
+      <div class="form-group">
+        <label for="inputName"><%= I18n.t("tu") + " " + I18n.t("nombre")%> </label>
+        <input type="text" name = "name" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder= <%=I18n.t("nombre")%> required>
+      </div>
       <div class="form-group">
         <label for="inputEmail"><%= I18n.t("tu") %> Email</label>
         <input type="email" name = "email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" required>

@@ -12,9 +12,9 @@
                 <li class="dropdown">
                     <a  href="#" class="dropbtn"><%= t("empresa") %></a>
                     <div class="dropdown-content">
-                        <a href="#"><%= t("link1") %></a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a <%=link_to I18n.t("link1"), companies_link1_path%> </a>
+                        <a <%=link_to I18n.t("link2"), companies_link2_path%> </a>
+                        <a <%=link_to I18n.t("link3"), companies_link3_path%> </a>
                     </div>
                 </li>                
                 <li class="dropdown">
