@@ -12,7 +12,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'figaro'
 gem 'gmaps4rails'
 gem 'underscore-rails'
-
+gem 'listen', '~> 3.0.5'
 gem 'bootstrap-sass', '3.3.6'
 
 
@@ -27,7 +27,7 @@ group :development do
   gem 'capistrano-passenger', '~> 0.2.0'
   gem 'capistrano-rbenv', '~> 2.1'
   gem 'web-console'
-  gem 'listen', '~> 3.0.5'
+
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
